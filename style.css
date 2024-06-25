@@ -1,0 +1,182 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+NG+Modern:wght@100..400&display=swap');
+
+*,
+::after,
+::before{
+    box-sizing: border-box;
+    padding: 0;
+    margin:0;
+}
+
+
+:root{
+    font-size: 62.5%;
+}
+
+body{
+    background-image :url("images/wolfgang-hasselmann-Sn8OUZg8JZw-unsplash.jpg");
+    min-height: 100vh;
+    background-size:cover;
+    background-position: center;
+
+    font-family: "Playwrite NG Modern", cursive;
+    font-weight:600;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.quote_cont{
+    width:auto;
+    max-width:900px;
+    padding: 5rem 2rem;
+    text-align: center;
+
+
+
+
+
+    background-color: rgba(152, 142, 142, 0.4);
+
+    border-radius: 1.5rem;
+    box-shadow: 0 2rem 2rem 2rem rgba(0,0,0,0.2);
+
+
+}
+
+.quote{
+    display: flex;
+    gap:1rem;
+}
+
+
+
+
+.quote-icon{
+    font-size:5rem;
+}
+.quote-text{
+    font-size: 4rem;
+
+}
+
+.author{
+    text-align: center;
+    font-size:2rem;
+    font-style: italic;
+    font-weight: 400;
+    
+    margin-top:2rem;
+}
+
+.btn-cont{
+    display:flex;
+    justify-content: space-between;
+    margin-top:2rem;
+
+   
+}
+
+
+button{
+    padding: 1rem 2rem;
+    background-color:rgba(131, 127, 127, 0.4);
+    color:black;
+
+ 
+    
+    border:none;
+    outline:none;
+
+    border-radius: 1rem;
+    box-shadow: 0 1rem 1rem 1rem rgba(0,0,0,0.2);
+
+    cursor: pointer;
+    font-size: 2rem;
+
+    transition: transform 0.2s ease-in-out;
+
+}
+
+
+.social__link--button:hover{
+    color:rgb(39, 142, 225);
+}
+
+button:hover{
+    transform: scale(0.95);
+}
+
+
+
+
+
+.loader{
+    border: 16px solid #f3f3f3;
+    border-top: 16px solid #333;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite;
+  }
+  
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+
+
+.longFont{
+    font-size: 2.5rem;
+  }
+
+
+@media screen and (max-width:1000px){
+    .quote_cont{
+        margin:2rem 2rem;
+    }
+
+    .quote-icon{
+        font-size:2rem;
+    }
+    .quote-text{
+        font-size: 3rem;
+    }
+
+    button{
+        padding:1rem 2rem;
+    }
+
+
+}
+
+ @media screen and (max-width:600px){
+  
+    .quote-text{
+        font-size: 2rem;
+    }
+    button{
+        font-size: 1.5rem;
+    }
+
+    .author{
+        font-size: 1.5rem;
+    }
+
+
+
+
+} 
+@media screen and (max-width:400px){
+    .quote-text{
+        font-size: 1.5rem;
+    }
+   
+
+}
